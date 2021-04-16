@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakebook</title>
+</head>
+<body bgcolor="#3b5997">
+    <div class="header" align="center">
+        <img src="logo.png" alt="logo">
+    </div>
+    <table>
+        <tr>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend align="center" style="color: #fff;">None-Important Information</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="First Name" >
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Last Name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="email" placeholder="Your Email">
+                                    </td>
+                                    <td>
+                                        <input type="number" placeholder="Phone Number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="password" placeholder="Your Password">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Website">
+                                    </td>
+                                </tr>
+                            </table>
+                            <label for="birthday" style="color: #fff;">Birthday</label><br>
+                            <input type="datetime-local"><br>
+                            <label for="gender1">Female</label>
+                            <input type="radio" id="gender1" name="gender">
+                            <label for="gender2">Male</label>
+                            <input type="radio" id="gender2" name="gender">
+                            <label for="gender3">Other</label>
+                            <input type="radio" id="gender3" name="gender">
+                            <br>
+                    </fieldset>
+                    <div class="button" align="center">
+                        <input type="reset" value="clear">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <form>
+                    <fieldset>
+                        <legend>Important Information *required</legend>
+                        <select name="country" id="country">
+                            <option value="">Country</option>
+                            <option value="uzb">Uzbekistan</option>
+                            <option value="usa">USA</option>
+                            <option value="rus">Russia</option>
+                        </select>
+                        <input type="text" placeholder=Village">
+                        <input type="text" placeholder="District"><br>
+                        <input type="text" placeholder="Street">
+                        <input type="text" placeholder="Nr">
+                        <input type="text" placeholder="Floor">
+                        <input type="text" placeholder="Ap Nr"><br>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>
