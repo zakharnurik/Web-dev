@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styale.css">
+    <title>Fakebook</title>
+</head>
+<body bgcolor="#3b5997">
+    <div class="header" align="center">
+        <img src="logo.png" alt="logo">
+    </div>
+    <div class="forms" align="center">
+        <table>
+            <tr>
+                <td>
+                    <form>
+                        <fieldset style="color: #fff;" class="form1">
+                            <legend style="color: #fff;" align="center">None-Important Information</legend>    
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="First Name">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Last Name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="email" placeholder="Your Email">   
+                                    </td>
+                                    <td>
+                                        <input type="number" placeholder="Your Number">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="password" placeholder="Your Password">
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Website">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <label for="date" style="color: #fff;">Birthday</label><br>
+                                        <input type="datetime-local" id="date">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="radio" id="gen1" name="gender"><label for="gen1" style="color: #fff;">Female</label>
+                                        <input type="radio" id="gen2" name="gender"><label for="gen2" style="color: #fff;">Male</label>
+                                        <input type="radio" id="gen3" name="gender"><label for="gen3" style="color: #fff;">Other</label>
+                                    </td>
+                                </tr>
+                            </table>
+                            <br>
+                        </fieldset><br>
+                        <div class="button1" align="center" style="background-color: #dddddd; height: 30px; width: 350px;">
+                            <input type="reset" value="Clear Form" style="border-width: 0px; background-color: #dddddd; padding: 0px; color: #49526f;
+                            width: 380px; height: 30px;">
+                        </div>
+                    </form>
+                </td>
+                <td colspan="2">
+                    <form>
+                        <fieldset style="color: #fff;" class="form2">
+                            <legend style="color: #fff;" align="center">Important Information *required</legend>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <select name="conutry" id="conutry" style="color: rgb(133, 133, 133);" required>
+                                            <option value="">Country</option>
+                                            <option value="uzb">Uzbekistan</option>
+                                            <option value="usa">USA</option>
+                                            <option value="rus">Russia</option>
+                                        </select>
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" placeholder="Village" required>
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="District" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" placeholder="Street" size="8" required>
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Nr" size="7" required>
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="Floor" size="7" required>
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="App Nr" size="7" required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="1">
+                                        <label for="color" style="color: #fff;">Door Color</label><br>
+                                        <input type="color" id="color" style="width: 85px; border: none;" required>
+                                    </td>
+                                    <td colspan="2">
+                                        <br>
+                                        <input type="text" placeholder="Water Meter Nr" required>
+                                    </td>
+                                    <td colspan="2">
+                                        <br>
+                                        <select name="aunt" id="aunt" style="color: rgb(133, 133, 133);" required>
+                                            <option value="">Aunt Panties' Size</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5">
+                                        <label for="message" style="color: #fff;">More Personal Information</label><br>
+                                        <textarea name="message" id="message" cols="60" rows="4" style="color: rgb(133, 133, 133);" required>Give Us More Information!!!</textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset><br>
+                        <div class="button2">
+                            <button>Register</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

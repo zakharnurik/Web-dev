@@ -1,0 +1,26 @@
+.main {
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+.main table {
+    height: 100%;
+    text-transform: uppercase;
+    border-color: snow;
+}
+tbody {
+    background: #00151f;
+    color:grey;
+}
+th {
+    color: #fff;
+    text-transform: uppercase;
+}
+#simple {
+    background: orange;
+}
+#standart {
+    background:darksalmon;
+}
+#ultimate {
+    background:slategrey;
+}
