@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+.header{
+    height: 280px;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+.topmenu{
+    position: sticky;
+    top:0;
+    text-align: center;
+    background: #00bbf9;
+    border:1px solid #00bbf9;
+    box-sizing: border-box;
+}
+.topmenu>li{
+    display: inline-block;
+    position: relative;
+}
+.topmenu>li>a{
+    position: relative;
+    display: inline-block;
+    padding:10px;
+    color:#fff;
+}
+.topmenu>li>a::after{
+    content: "";
+position: absolute;
+z-index: 2;
+width: 0;
+height: 2px;
+left:0;
+bottom:0;
+background: #00bbf9;
+transition: width 0.6s,left 0.9s;
+}
+.topmenu>li>a::before{
+    content: "";
+position: absolute;
+z-index: 2;
+width: 0;
+height: 2px;
+left:100%;
+top:0;
+background: #00bbf9;
+transition: left 0.6s,width 0.6s;
+}
+.topmenu>li:hover>a{
+    color:#00bbf9;
+    background: #fff;
+}
+.topmenu>li>a:hover{
+    
+}
+.topmenu>li>a:hover::after{
+    width: 100%;
+}
+.topmenu>li>a:hover::before{
+    left:0;
+    width:100%;
+}
+.sub{
+    position: absolute;
+    display: none;
+    top:100%;
+    width:200%;
+    background: #00bbf9;
+    text-align: left;
+    transition: height 0.5s;
+}
+.topmenu>li:hover>.sub{
+    display: block;
+}
+.sub a{
+    box-sizing: border-box;
+    display: block;
+    padding:10px;
+    color:#fff;
+    position: relative;
+    border-bottom: 1px dashed #fff;
+}
+.sub a:hover{
+    background: #fff;
+    color:#00bbf9;
+}
+.sub>li>a:after{
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 3px;
+    right: 0;
+    top: 0;
+    background: #00bbf9;
+    transition: height 0.5s;
+}
+.sub>li>a:hover::after{
+    height: 100%;
+}
+.sub>li{
+    position: relative;
+}
+.sub>li>ul{
+    overflow: hidden;
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    background: #00bbf9;
+    text-align: left;
+    opacity: 0;
+    z-index: -1;
+    transition: left 0.6s, opacity 0.6s;
+}
+.sub>li:hover>ul{
+    
+    left:100%;
+    opacity: 1;
+}
+.header img{
+    display: block;
+    animation: rasm 50s infinite;
+}
+.up{
+    display: inline-block;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    padding: 20px;
+    background:#00bbf9;
+    color:#fff;
+    border-radius: 10px;
+}
+
+@keyframes rasm {
+    0% {
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,-100px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+}
+

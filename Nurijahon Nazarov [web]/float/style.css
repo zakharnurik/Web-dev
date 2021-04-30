@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.topmenu{
+    background: #d1adff;
+    display: inline-block;
+    width: 100%;
+}
+.topmenu>li{
+    display: inline-block;
+    width: 5%;
+    text-align: center;
+}
+.topmenu>li:first-child{
+    margin-left: 40%;
+}
+.card{
+    width: 20%;
+}
+.card>img{
+    width: 100%;
+}
