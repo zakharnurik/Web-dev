@@ -1,0 +1,32 @@
+.menu-nav{
+    position: relative;
+}
+body{
+    background: #222533;
+}
+.menu-nav{
+    z-index: 5;
+}
+.menu-nav>a{
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+}
+.menu-nav>a::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: red;
+    transition: width 0.6s;
+}
+.menu-nav>a:hover::after{
+    width: 100%;
+}
+img{
+    display: block;
+    width: 100%;
+}
